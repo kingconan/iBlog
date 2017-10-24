@@ -32,7 +32,7 @@ class IndexController extends Controller
         ]);
     }
     public function arts(Request $request){
-        $page = "frontend.index";
+        $page = "frontend.arts";
         return view($page, [
             "title" => "iBlog",
             "arts" => "nav_focus",

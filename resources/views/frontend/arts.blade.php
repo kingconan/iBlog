@@ -20,15 +20,14 @@
     <script>
         var base_url = '{{URL::to("assets/images")}}' + "/"
         var urls = [
-            base_url+"athletics1.png",
-            base_url+"athletics2.png",
-            base_url+"athletics3.png",
-            base_url+"athletics4.png",
-            base_url+"athletics5.png",
-            base_url+"athletics6.png",
-            base_url+"athletics7.JPG",
-            base_url+"athletics8.jpg",
-            base_url+"athletics9.jpg"
+            base_url+"art1.JPG",
+            base_url+"art2.JPG",
+            base_url+"art3.JPG",
+            base_url+"art4.JPG",
+            base_url+"art5.JPG",
+            base_url+"art6.JPG",
+            base_url+"art7.JPG",
+            base_url+"art8.JPG"
         ]
         var root = $("#gallery_part");
         for(var i= 0,len = urls.length;i<len;i++){

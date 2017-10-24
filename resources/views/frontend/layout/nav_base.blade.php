@@ -42,10 +42,11 @@
                 margin: 6px;
             }
         </style>
+        @yield('style')
     </head>
     <body>
-        <div style="height: 300px;width: 100%;background-color: lightblue">
-
+        <div style="width: 100%;background-color: lightblue;text-align: center">
+            <div style="padding: 100px 0;font-size: 56px">Holly Blog</div>
         </div>
         <div class="blog_nav">
             <div>
