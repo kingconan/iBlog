@@ -24,7 +24,7 @@
             base_url+"art2.JPG",
             base_url+"art3.JPG",
             base_url+"art4.JPG",
-            base_url+"art5.JPG",
+            base_url+"art5.jpg",
             base_url+"art6.JPG",
             base_url+"art7.JPG",
             base_url+"art8.JPG"
