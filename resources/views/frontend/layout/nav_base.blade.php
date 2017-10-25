@@ -46,7 +46,7 @@
     </head>
     <body>
         <div style="width: 100%;background-color: lightblue;text-align: center">
-            <div style="padding: 100px 0;font-size: 56px">Holly Blog</div>
+            <div style="padding: 100px 0;font-size: 56px"><span style="color: grey">Holly Blog</span><br/>UNDER CONSTRUCTION</div>
         </div>
         <div class="blog_nav">
             <div>
