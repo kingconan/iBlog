@@ -1,4 +1,4 @@
-@extends("frontend.layout.nav_base")
+@extends($is_mobile ? "mobile.layout.nav_base" :"frontend.layout.nav_base")
 @section('content')
     <div>
         <div id="gallery_part">

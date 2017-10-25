@@ -1,4 +1,4 @@
-@extends("frontend.layout.nav_base")
+@extends($is_mobile ? "mobile.layout.nav_base" :"frontend.layout.nav_base")
 @section('style')
     <link rel="stylesheet" href="{{URL::to('assets/css/jquery.bxslider.min.css')}}" />
     <style type="text/css">
