@@ -7,8 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{URL::to('assets/css/app.css')}}" />
         <link rel="stylesheet" href="{{URL::to('assets/css/blueimp-gallery.min.css')}}" />
-        {{--<link href="https://fonts.googleapis.com/css?family=Courgette|Satisfy" rel="stylesheet">--}}
-        {{--<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">--}}
+        <link href="https://fonts.googleapis.com/css?family=Courgette|Satisfy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <style>
             .nav_li{
                 padding: 30px;
