@@ -18,7 +18,7 @@ class IndexController extends Controller
         $agent = new Agent();
         $is_mobile = $agent->isMobile();
         return view($page, [
-            "title" => "iBlog",
+            "title" => "Home",
             "home" => "nav_focus",
             "keyword" => IndexController::META_KEYWORD,
             "description" => IndexController::META_DESCRIPTION,
@@ -30,7 +30,7 @@ class IndexController extends Controller
         $agent = new Agent();
         $is_mobile = $agent->isMobile();
         return view($page, [
-            "title" => "iBlog",
+            "title" => "Athletics",
             "athletics" => "nav_focus",
             "keyword" => IndexController::META_KEYWORD,
             "description" => IndexController::META_DESCRIPTION,
@@ -42,7 +42,7 @@ class IndexController extends Controller
         $agent = new Agent();
         $is_mobile = $agent->isMobile();
         return view($page, [
-            "title" => "iBlog",
+            "title" => "Art",
             "arts" => "nav_focus",
             "keyword" => IndexController::META_KEYWORD,
             "description" => IndexController::META_DESCRIPTION,
@@ -54,7 +54,7 @@ class IndexController extends Controller
         $agent = new Agent();
         $is_mobile = $agent->isMobile();
         return view($page, [
-            "title" => "iBlog",
+            "title" => "Life at Rectory",
             "rectory" => "nav_focus",
             "keyword" => IndexController::META_KEYWORD,
             "description" => IndexController::META_DESCRIPTION,
@@ -66,7 +66,7 @@ class IndexController extends Controller
         $agent = new Agent();
         $is_mobile = $agent->isMobile();
         return view($page, [
-            "title" => "iBlog",
+            "title" => "Awards",
             "awards" => "nav_focus",
             "keyword" => IndexController::META_KEYWORD,
             "description" => IndexController::META_DESCRIPTION,
@@ -78,7 +78,7 @@ class IndexController extends Controller
         $agent = new Agent();
         $is_mobile = $agent->isMobile();
         return view($page, [
-            "title" => "iBlog",
+            "title" => "Community Services",
             "community_services" => "nav_focus",
             "keyword" => IndexController::META_KEYWORD,
             "description" => IndexController::META_DESCRIPTION,

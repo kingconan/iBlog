@@ -28,17 +28,19 @@
                 color: lightblue;
             }
             .footer{
-                min-height: 300px;
+                min-height: 120px;
                 width: 100%;
-                background-color: black;
+                /*background-color: black;*/
                 text-align: center;
+                color: grey;
             }
             .container{
                 min-height: 500px;
             }
             .normal_img{
-                object-fit:cover ;width: 200px;height: 200px;
+                object-fit:cover;
                 margin: 6px;
+                width: 100%;
             }
         </style>
         @yield('style')
@@ -46,7 +48,9 @@
     <body>
         <div class="blog_nav">
             <div style="">
-                <div style="float: left;padding: 15px">Holly</div>
+
+                <div style="float: left;padding: 15px">{{$title or ""}}</div>
+                {{--<div style="text-align: center;position:absolute;padding: 15px;width: 100%;">XinWen (Holly) Hu</div>--}}
                 <div style="float: right;padding: 15px;font-size: 16px" onclick="show_nav(this)">
                     <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
                 </div>
@@ -58,7 +62,7 @@
                 <div style="height: 1px;width: 100%;background-color: lightgrey"></div>
                 <a href="{{URL::to('/athletics')}}" class="nav_li {{$athletics or ''}}">Athletics</a>
                 <div style="height: 1px;width: 100%;background-color: lightgrey"></div>
-                <a href="{{URL::to('/arts')}}"  class="nav_li {{$arts or ''}}">Art & Draft</a>
+                <a href="{{URL::to('/arts')}}"  class="nav_li {{$arts or ''}}">Arts</a>
                 <div style="height: 1px;width: 100%;background-color: lightgrey"></div>
                 <a href="{{URL::to('/rectory')}}" class="nav_li {{$rectory or ''}}">Life at Rectory</a>
                 <div style="height: 1px;width: 100%;background-color: lightgrey"></div>
@@ -75,7 +79,7 @@
             </div>
         </div>
         <div class="footer">
-            <div style="padding: 30px">&copy;{{date("Y")}}</div>
+            <div style="padding: 30px">&copy;{{date("Y")}} by XinWen (Holly) Hu.</div>
         </div>
         <script src="{{URL::to('assets/js/app.js')}}"></script>
         <script src="{{URL::to('assets/js/blueimp-gallery.min.js')}}"></script>

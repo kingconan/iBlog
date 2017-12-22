@@ -72,7 +72,7 @@
             </div>
         </div>
         <div class="footer">
-            <div style="padding: 30px">&copy;{{date("Y")}} by WenXin-Hu.</div>
+            <div style="padding: 30px">&copy;{{date("Y")}} by XinWen (Holly) Hu</div>
         </div>
         <script src="{{URL::to('assets/js/app.js')}}"></script>
         <script src="{{URL::to('assets/js/blueimp-gallery.min.js')}}"></script>

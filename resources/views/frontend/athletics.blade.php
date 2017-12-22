@@ -15,6 +15,51 @@
 @endsection
 @section('content')
     <div>
+    @if($is_mobile)
+            <div id="mobile">
+                <div class="year">
+                    <div style="float: left;width: 100%;padding-left: 60px;position: relative">
+                        <div id="g2017" style="border-left: 1px solid lightgrey;padding: 15px">
+
+                        </div>
+                        <div style="width: 11px;height: 11px;background-color: lightgrey;position: absolute;left:55px;top: 0px;border-radius: 10px"></div>
+                    </div>
+                    <div style="float: left;width: 60px;margin-left: -100%">
+                        <div class="left_year">2017</div>
+                        {{--<div>description</div>--}}
+                    </div>
+                </div>
+                <div class="year">
+                    <div style="float: left;width: 100%;padding-left: 60px;position: relative">
+                        <div id="g2016" style="border-left: 1px solid lightgrey;padding:15px">
+
+                        </div>
+                        <div style="width: 11px;height: 11px;background-color: lightgrey;position: absolute;left:55px;top: 0;border-radius: 10px"></div>
+                    </div>
+                    <div style="float: left;width: 60px;margin-left: -100%;">
+                        <div class="left_year">2016</div>
+                        {{--<div>description</div>--}}
+                    </div>
+                </div>
+                <div class="year">
+                    <div style="float: left;width: 100%;padding-left: 60px;position: relative">
+                        <div id="g2015" style="border-left: 1px solid lightgrey;padding:15px">
+
+                        </div>
+                        <div style="width: 11px;height: 11px;background-color: lightgrey;position: absolute;left:55px;top: 0;border-radius: 10px"></div>
+                    </div>
+                    <div style="float: left;width: 60px;margin-left: -100%">
+                        <div class="left_year">2015</div>
+                        {{--<div>description</div>--}}
+                    </div>
+                </div>
+                <div class="year">
+                    <div style="float: left;width: 100%;padding-left: 60px;position: relative">
+                        <div style="width: 11px;height: 2px;background-color: lightgrey;position: absolute;left:55px;top: 0;"></div>
+                    </div>
+                </div>
+            </div></div>
+    @else
         <div>
             <div class="year">
                 <div style="float: left;width: 100%;padding-left: 130px;position: relative">
@@ -57,14 +102,10 @@
                 <div style="width: 11px;height: 2px;background-color: lightgrey;position: absolute;left:125px;top: 0;"></div>
             </div>
         </div>
+    </div></div>
+    @endif
+    <div style="clear: both"></div>
     </div>
-        </div>
-        <div style="clear: both"></div>
-        <div id="gallery_part">
-
-        </div>
-    </div>
-
     <div id="blueimp-gallery" class="blueimp-gallery">
         <div class="slides"></div>
         <h3 class="title"></h3>
@@ -110,14 +151,16 @@
                 if(urls[j][i].indexOf("mp4", urls[j][i].length - "mp4".length) !== -1){
                     var thumbnail = urls[j][i].substring(0, (urls[j][i].length - 3)) + "png";
                     console.log(thumbnail);
-                    var img = '<a style="position: relative" href="' + urls[j][i] + '" type="video/mp4">' +
-                            '<img class="normal_img" src="'+thumbnail+'">' +
-                            '<i class="fa fa-play" aria-hidden="true" style="font-size: 20px;position: absolute;left: 100px;top: 0px;color: white"></i>' +
+                    var img = '<a style="position: relative;display: inline-block" href="' + urls[j][i] + '" type="video/mp4">' +
+                            '<img class="normal_img" src="'+thumbnail+'" />' +
+                            '<span><i class="fa fa-play" aria-hidden="true" ' +
+                            'style="font-size: 20px;position: absolute;left: 50%;top: 50%;margin-left:-7px;margin-top: -10px;color: white" /></span>' +
                             '</a>';
                     root.append(img);
                 }
                 else{
-                    var img = '<a href="' + urls[j][i] + '"><img class="normal_img" src="'+urls[j][i]+'"></a>';
+                    var img = '<a style="position: relative" href="' + urls[j][i] + '"><img class="normal_img" src="'+urls[j][i]+'" />' +
+                            '</a>';
                     root.append(img);
                 }
             }

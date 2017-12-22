@@ -8,7 +8,7 @@
 @endsection
 @section('content')
     <div>
-        <div id="gallery_part">
+        <div id="gallery_part" style="position: relative">
 
         </div>
     </div>
@@ -35,23 +35,24 @@
             if(urls[i].indexOf("mp4", urls[i].length - "mp4".length) !== -1
             ){
                 var thumbnail = urls[i].substring(0, (urls[i].length - 3)) + "png";
-                var img = '<a style="position: relative" href="' + urls[i] + '" type="video/mp4">' +
-                        '<img class="normal_img" src="'+thumbnail+'">' +
-                        '<i class="fa fa-play" aria-hidden="true" style="font-size: 20px;position: absolute;left: 100px;top: 0px;color: white"></i>' +
+                var img = '<a style="position: relative;display: inline-block;" href="' + urls[i] + '" type="video/mp4">' +
+                        '<img class="normal_img" src="'+thumbnail+'" />' +
+                        '<i class="fa fa-play" aria-hidden="true" style="font-size: 20px;position: absolute;left: 50%;top: 50%;margin-left:-7px;margin-top: -10px;color: white"></i>' +
                         '</a>';
                 root.append(img);
             }
             else if(urls[i].indexOf("mov", urls[i].length - "mov".length) !== -1
             ){
                 var thumbnail = urls[i].substring(0, (urls[i].length - 3)) + "png";
-                var img = '<a style="position: relative" href="' + urls[i] + '" type="video/mp4">' +
-                        '<img class="normal_img" src="'+thumbnail+'">' +
-                        '<i class="fa fa-play" aria-hidden="true" style="font-size: 20px;position: absolute;left: 100px;top: 0px;color: white"></i>' +
+
+                var img = '<a style="position: relative;display: inline-block;" href="' + urls[i] + '" type="video/mp4">' +
+                        '<img class="normal_img" src="'+thumbnail+'" />' +
+                        '<i class="fa fa-play" aria-hidden="true" style="font-size: 20px;position: absolute;left: 50%;top: 50%;margin-left:-7px;margin-top: -10px;color: white"></i>' +
                         '</a>';
                 root.append(img);
             }
             else{
-                var img = '<a href="' + urls[i] + '"><img class="normal_img" src="'+urls[i]+'"></a>';
+                var img = '<a href="' + urls[i] + '"><img class="normal_img" src="'+urls[i]+'" /></a>';
                 root.append(img);
             }
 
