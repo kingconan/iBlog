@@ -53,7 +53,8 @@
             base_url+"athletics6.png",
             base_url+"athletics7.JPG",
             base_url+"athletics8.jpg",
-            base_url+"athletics9.jpg"
+            base_url+"athletics9.jpg",
+            base_url+"athletics10.jpeg",
         ]
         $( document ).ready(function() {
             var li_res = "";

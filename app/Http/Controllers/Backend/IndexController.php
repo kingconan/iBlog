@@ -50,7 +50,7 @@ class IndexController extends Controller
         ]);
     }
     public function rectory(Request $request){
-        $page = "frontend.index";
+        $page = "frontend.life";
         $agent = new Agent();
         $is_mobile = $agent->isMobile();
         return view($page, [
@@ -62,7 +62,7 @@ class IndexController extends Controller
         ]);
     }
     public function awards(Request $request){
-        $page = "frontend.index";
+        $page = "frontend.award";
         $agent = new Agent();
         $is_mobile = $agent->isMobile();
         return view($page, [
@@ -74,7 +74,7 @@ class IndexController extends Controller
         ]);
     }
     public function community_services(Request $request){
-        $page = "frontend.index";
+        $page = "frontend.community";
         $agent = new Agent();
         $is_mobile = $agent->isMobile();
         return view($page, [
