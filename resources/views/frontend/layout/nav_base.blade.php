@@ -62,7 +62,7 @@
                 <a href="{{URL::to('/arts')}}"  class="nav_li {{$arts or ''}}">Art</a>
                 <a href="{{URL::to('/rectory')}}" class="nav_li {{$rectory or ''}}">Life at Rectory</a>
                 <a href="{{URL::to('/awards')}}" class="nav_li {{$awards or ''}}">Awards</a>
-                <a href="{{URL::to('/community_services')}}" class="nav_li {{$community_services or ""}}">Community Services</a>
+{{--                <a href="{{URL::to('/community_services')}}" class="nav_li {{$community_services or ""}}">Community Services</a>--}}
             </div>
             <div style="clear: both"></div>
         </div>

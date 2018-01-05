@@ -29,6 +29,7 @@
         var urls = [
             base_url+"1513930176.mov",
             base_url+"WechatIMG59.jpeg",
+            base_url+"award_1.jpg",
         ]
         var root = $("#gallery_part");
         for(var i= 0,len = urls.length;i<len;i++){
